@@ -1,0 +1,14 @@
+# Reflection
+
+
+**Confidence in Design**  
+I felt most confident in defining the healthcare problem and designing the overall data flow of the system. The medication understanding and reconciliation use case reflects a common challenge in clinical settings, which made it easier to design a realistic workflow from patient input to clinician review. Based on my experience scribing and working in other healthcare environments, I have seen how this issue occurs and have heard similar concerns from other healthcare workers. A design approach like this has the potential to reduce confusion, improve communication, and help relieve some of these challenges in clinical workflows. I was also comfortable mapping each component of the system to appropriate cloud services such as storage, compute, and databases, based on concepts covered throughout the course.
+
+**Areas of Uncertainty**  
+The area I am least confident about is handling security and governance considerations at an appropriate level of detail. This includes how access controls and data validation would be implemented in a real-world clinical environment, where multiple users interact with the system and data accuracy is critical. In this design, these concerns are intentionally addressed at a high level to avoid overcomplicating the system and to keep the project within the scope of a student design exercise. While this approach is appropriate for the assignment, a real-world implementation would require deeper consideration of how to prevent medication data mix-ups, manage user permissions across different roles, and ensure consistent data accuracy as information is updated by both patients and clinic staff.
+
+**Alternative Architecture Considered**  
+An alternative architecture I considered was using an always-on virtual machine to host the web application and handle all data processing. I chose not to pursue this approach because it would increase operational complexity and cost, and it would not take advantage of the scalability and efficiency of serverless and managed cloud services. The final design better aligns with modern cloud practices and the goals of the assignment.
+
+**Future Improvements**  
+With additional time and resources, I would expand the system to include more advanced patient education features, such as clearer explanations of medication timing and side effects tailored to individual users. I would also explore adding basic analytics to identify patterns in medication adherence over time, which could further support clinicians while maintaining the system’s role as an educational and supportive tool. Additionally, I would want to consider improving the user interface to make medication information easier to navigate and undeerstand for patients with varying levels of health literacy. 
