@@ -55,9 +55,7 @@ CR -->|Display summaries| D
 
  
 ## Security, Identity, and Governance
-This system uses synthetic medication data and does not store real patient identifiers to avoid handling protected health information. Access to cloud resources is managed using role based access controls to ensure that only authorized services can read or write data. Data is used only for demonstration and educational purposes, and no real patient information is entered into the system. This approach helps reduce privacy risk while still allowing the system to function as a realistic healthcare workflow.
-
-Application credentials are managed using environment variables or cloud managed identity services rather than being hardcoded in the application. Raw data stored in cloud storage and structured data stored in the database are kept private and are not publicly accessible. Clinical decision making remains the responsibility of licensed providers, and the system is intended only to support patient education and medication reconciliation.
+This system uses synthetic medication data and does not store real patient identifiers to avoid handling protected health information. Access to cloud resources is restricted so that only authorized services can read or write data, helping reduce privacy risks while still supporting a realistic healthcare workflow. Login and access information is handled securely and is not built directly into the application. All stored data is kept private and protected from public access. The system is intended to support patient education and medication reconciliation, while all clinical decision making remains the responsibility of licensed healthcare professionals.
 
 
 ## Cost and Operational Considerations
